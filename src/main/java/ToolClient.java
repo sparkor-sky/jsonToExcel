@@ -92,6 +92,12 @@ public class ToolClient {
     private static Map<String, String> genTitleMap(){
         Map<String, String> keyTitleMap = new HashMap<>();
         keyTitleMap.put("timestamp", "时间");
+        keyTitleMap.put("data->event", "event");
+        keyTitleMap.put("data->id", "id");
+        keyTitleMap.put("data->channel", "channel");
+        keyTitleMap.put("data->app", "app");
+        keyTitleMap.put("data->batch", "batch");
+        keyTitleMap.put("data->code", "code");
         return keyTitleMap;
     }
 }

@@ -204,19 +204,27 @@ public final class JsonFileToExcel {
 
         // 二级
         Set<String> subKeySet = new HashSet<>();
-        for (int i = 0; i < datas.size(); i++) {
-            JsonObject data = datas.get(i);
-            keys.forEach(key -> {
+        datas.forEach(data -> {
+            for (Iterator<String> iterator1 = keys.iterator(); iterator1.hasNext(); ) {
+                String key = iterator1.next();
                 JsonElement element = data.get(key);
-                if (element.isJsonObject()) {
+                if (null != element && element.isJsonObject()) {
                     Map map = gson.fromJson(element.getAsJsonObject(), Map.class);
-                    map.keySet().forEach(subKey -> subKeySet.add(key + SEPARATOR + subKey));
+                    map.keySet().forEach(subKey -> {
+                        subKeySet.add(key + SEPARATOR + subKey);
+                    });
+                    System.out.println("find jsonObject: " + key);
+                    iterator1.remove();
                 }
-            });
-        }
+            }
+        });
         keys.addAll(subKeySet);
 
         keys.removeIf(Objects::isNull);
+
+        keys.forEach(key -> {
+            System.out.println("find key: " + key);
+        });
 
         return new ArrayList<>(keys);
     }
