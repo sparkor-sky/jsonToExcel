@@ -20,9 +20,12 @@ import java.util.stream.Collectors;
 /**
  * Json to Excel
  */
+@SuppressWarnings("unchecked")
 public final class JsonFileToExcel {
 
     private static final int DEFAULT_ROW_COUNT = 100000;
+
+    private static final String SEPARATOR = "->";
 
     public static void trans(String from){
         trans(from, null, new HashMap<>(), DEFAULT_ROW_COUNT);
@@ -116,7 +119,7 @@ public final class JsonFileToExcel {
                 JsonObject json = datas.get(i);
                 for (int j = 0; j < keyList.size(); j++) {
                     String key = keyList.get(j);
-                    String value = "-";
+                    String value = "";
                     if (StringUtils.isNotBlank(timeField) && timeField.equalsIgnoreCase(key)) {
                         JsonElement e = json.get(key);
                         try{
@@ -131,10 +134,33 @@ public final class JsonFileToExcel {
                             value = e.getAsString();
                         }
                     } else {
-                        JsonElement e = json.get(key);
-                        if(null != e){
-                            value = e.getAsString();
+                        String[] keyParts = key.split(SEPARATOR);
+                        if(keyParts.length == 1){
+                            JsonElement e = json.get(key);
+                            if(null != e){
+                                if(e.isJsonObject()){
+                                    value = e.getAsJsonObject().toString();
+                                } else if(e.isJsonArray()){
+                                    value = e.getAsJsonArray().toString();
+                                } else {
+                                    value = e.getAsString();
+                                }
+
+                            }
+                        } else if(keyParts.length == 2){
+                            JsonElement e = json.get(keyParts[0]);
+                            if(null != e){
+                                if(!e.isJsonObject()){
+                                    System.out.println("json element can not match key, key: " + key + ", json: " + e.toString());
+                                    throw new IllegalArgumentException();
+                                }
+                                JsonElement subEle = e.getAsJsonObject().get(keyParts[1]);
+                                if(null != subEle){
+                                    value = subEle.getAsString();
+                                }
+                            }
                         }
+
                     }
                     row.createCell(j).setCellValue(value);
                 }
@@ -171,10 +197,27 @@ public final class JsonFileToExcel {
             new LinkedList<>();
         }
         Gson gson = new Gson();
+        // 一级
         List<Map> maps = datas.stream().map(e -> gson.fromJson(e, Map.class)).collect(Collectors.toList());
         Set<String> keys = new HashSet<>();
         maps.forEach(e -> keys.addAll(e.keySet()));
+
+        // 二级
+        Set<String> subKeySet = new HashSet<>();
+        for (int i = 0; i < datas.size(); i++) {
+            JsonObject data = datas.get(i);
+            keys.forEach(key -> {
+                JsonElement element = data.get(key);
+                if (element.isJsonObject()) {
+                    Map map = gson.fromJson(element.getAsJsonObject(), Map.class);
+                    map.keySet().forEach(subKey -> subKeySet.add(key + SEPARATOR + subKey));
+                }
+            });
+        }
+        keys.addAll(subKeySet);
+
         keys.removeIf(Objects::isNull);
+
         return new ArrayList<>(keys);
     }
 

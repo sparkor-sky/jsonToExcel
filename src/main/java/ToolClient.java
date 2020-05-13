@@ -1,6 +1,4 @@
-import com.wuxi.sqlLine.DefaultSqlLineToJson;
 import com.wuxi.tools.JsonFileToExcel;
-import com.wuxi.tools.SqlFileToJsonFile;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -14,24 +12,24 @@ public class ToolClient {
     /**
      * The file path of source sql file that export from mysql
      * */
-    private static String sqlSource = "/Users/liwuxi/Desktop/xs.txt";
+    private static String sqlSource = "/Users/liwuxi/Desktop/nielsen.txt";
 
     public static void main(String[] args){
-        String targetJsonFilePath = genTargetPath();
+//        String targetJsonFilePath = genTargetPath();
 
-        // 删除旧数据
-        clean(targetJsonFilePath);
-
-        // sql文件转 json文件
-        List<String> keyList = genKeyList();
-
-        SqlFileToJsonFile.trans(sqlSource, targetJsonFilePath, new DefaultSqlLineToJson("(", "),"), keyList);
+//        // 删除旧数据
+//        clean(targetJsonFilePath);
+//
+//        // sql文件转 json文件
+//        List<String> keyList = genKeyList();
+//
+//        SqlFileToJsonFile.trans(sqlSource, targetJsonFilePath, new DefaultSqlLineToJson("(", "),"), keyList);
 
         // json 转excel
-        String timeField = "db_update_time";
+        String timeField = "timestamp";
         Map<String, String> keyTitleMap = genTitleMap();
 
-        JsonFileToExcel.trans(targetJsonFilePath, timeField, keyTitleMap, 10000);
+        JsonFileToExcel.trans("/Users/liwuxi/Desktop/nielsen.txt", timeField, keyTitleMap, 100000);
     }
 
     /**
@@ -61,7 +59,7 @@ public class ToolClient {
      * the target dir path of json file
      * */
     private static String genTargetPath() {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:00");
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:00:00");
         return truncationDir(sqlSource) + "target" + File.separator + format.format(new Date()) + File.separator + "json.txt";
     }
 
@@ -93,8 +91,7 @@ public class ToolClient {
 
     private static Map<String, String> genTitleMap(){
         Map<String, String> keyTitleMap = new HashMap<>();
-        keyTitleMap.put("reward_phone", "领奖手机号");
-        keyTitleMap.put("phone", "手机号");
+        keyTitleMap.put("timestamp", "时间");
         return keyTitleMap;
     }
 }
