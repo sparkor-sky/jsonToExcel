@@ -17,6 +17,7 @@ insert into test.user
 ``` 
  
 You must delete all useless message and only contains values that split with ','
+
 for example:
 
 ```
