@@ -26,10 +26,10 @@ public class ToolClient {
 //        SqlFileToJsonFile.trans(sqlSource, targetJsonFilePath, new DefaultSqlLineToJson("(", "),"), keyList);
 
         // json 转excel
-        String timeField = "timestamp";
+        String timeField = "timeStamp";
         Map<String, String> keyTitleMap = genTitleMap();
 
-        JsonFileToExcel.trans("/Users/liwuxi/Desktop/nielsen.txt", timeField, keyTitleMap, 100000);
+        JsonFileToExcel.trans("/Users/liwuxi/Desktop/landing.txt", timeField, keyTitleMap, 100000);
     }
 
     /**
