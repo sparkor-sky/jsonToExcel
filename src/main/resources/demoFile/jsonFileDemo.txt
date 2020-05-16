@@ -1,4 +1,6 @@
-{"id":"100080","name":"'lili'","customer":"'CTR'","quantity":"10","phone":"1820143XXXX","distributed_time":"'2019-12-24 05:12:05'","db_create_time":"1577164301033","db_update_time":"'2019-03-04 09:39:30'"}
-{"id":"100087","name":"'jarvis'","customer":"'CTR'","quantity":"10","phone":"1820143XXXX","distributed_time":"'2019-12-24 04:47:05'","db_create_time":"1577162785833","db_update_time":"'2019-03-04 09:39:30'"}
-{"id":"100143","name":"'luna'","customer":"'CTR'","quantity":"10","phone":"1820143XXXX","distributed_time":"'2019-10-12 14:31:01'","db_create_time":"1570890616033","db_update_time":"'2019-03-04 09:39:30'"}
-{"id":"100210","name":"'jimi'","customer":"'CTR'","quantity":"10","phone":"1820143XXXX","distributed_time":"'2020-01-03 11:13:06'","db_create_time":"1578049938054","db_update_time":"'2019-03-04 09:39:30'"}
+{"id": 1801301,  "name", "lili"  ,"age":18,  "gender":"m"  ,"company_id": 10089,  "degree": "master"},
+{"id": 1801302,  "name", "jimi"  ,"age":18,  "gender":"f"  ,"company_id": 10090,  "degree": "master"},
+{"id": 1801303,  "name", "xiag"  ,"age":20,  "gender":"f"  ,"company_id": 10091,  "degree": "master"},
+{"id": 1801304,  "name", "sdgs"  ,"age":22,  "gender":"m"  ,"company_id": 10092,  "degree": "master"},
+{"id": 1801305,  "name", "lisi"  ,"age":22,  "gender":"m"  ,"company_id": 10093,  "degree": "doctor"},
+{"id": 1801305,  "name", "segs"  ,"age":22,  "gender":"m"  ,"company_id": 10093,  "degree": "doctor"},
