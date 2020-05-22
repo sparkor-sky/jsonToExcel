@@ -49,8 +49,12 @@ public class ToolClient {
     private static boolean deleteDir(File dir) {
         if (dir.isDirectory()) {
             String[] children = dir.list();
-            for (int i=0; i<children.length; i++) {
-                boolean success = deleteDir(new File(dir, children[i]));
+            if(children == null || children.length == 0){
+                System.out.println("dir empty!");
+                return false;
+            }
+            for (String aChildren : children) {
+                boolean success = deleteDir(new File(dir, aChildren));
                 if (!success) {
                     return false;
                 }
@@ -67,7 +71,7 @@ public class ToolClient {
         return truncationDir(sqlSource) + "target" + File.separator + format.format(new Date()) + File.separator + "json.txt";
     }
 
-    public static String truncationDir(String from) {
+    private static String truncationDir(String from) {
         String[] parts = from.split(File.separator);
 
         return from.replace(parts[parts.length - 1], "");
