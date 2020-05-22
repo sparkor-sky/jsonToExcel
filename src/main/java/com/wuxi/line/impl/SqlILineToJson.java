@@ -1,19 +1,22 @@
-package com.wuxi.sqlLine;
+package com.wuxi.line.impl;
 
 import com.google.gson.JsonObject;
+import com.wuxi.line.ILineToJson;
 import org.apache.commons.collections4.CollectionUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 
-public class DefaultSqlLineToJson extends LineToJson {
+public class SqlILineToJson implements ILineToJson {
     private String prefix;
     private String suffix;
+    private List<String> keyList;
 
 
-    public DefaultSqlLineToJson(String prefix, String suffix) {
+    public SqlILineToJson(String prefix, String suffix, List<String> keyList) {
         this.prefix = prefix;
         this.suffix = suffix;
+        this.keyList = keyList;
     }
 
     /**
@@ -21,7 +24,7 @@ public class DefaultSqlLineToJson extends LineToJson {
      * @return
      */
     @Override
-    public String lineToString(String line, List<String> keyList) {
+    public String lineToString(String line) {
         if(StringUtils.isNotBlank(prefix)){
             line = line.replace(prefix, "");
         }

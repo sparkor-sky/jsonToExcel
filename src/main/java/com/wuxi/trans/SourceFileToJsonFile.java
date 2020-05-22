@@ -1,6 +1,6 @@
-package com.wuxi.tools;
+package com.wuxi.trans;
 
-import com.wuxi.sqlLine.LineToJson;
+import com.wuxi.line.ILineToJson;
 import org.apache.commons.io.IOUtils;
 import org.apache.commons.lang3.StringUtils;
 
@@ -9,17 +9,12 @@ import java.util.List;
 
 public class SourceFileToJsonFile {
 
-    private LineToJson lineToJson;
+    private ILineToJson ILineToJson;
 
-    public SourceFileToJsonFile(LineToJson lineToJson){
-        this.lineToJson = lineToJson;
+    public SourceFileToJsonFile(ILineToJson ILineToJson){
+        this.ILineToJson = ILineToJson;
     }
 
-    /**
-     * @param sourceFile
-     * @param targetFile
-     * @param keyList  { "_index": "ques_backflow_monitor_data","_type": "data_backflow","_id": "AXH4nLjDbZavDk9jAZoo","_score": 5.680634,"_source": { "dataType": "ques","data": { "deviceId": "","event": 2,"id": "UeXqiTIjhdabrlvIk4qP","qiguaitype": "from-landing-page","end_question": "","test": "","code": "","batch": "","phone": "","app": "ctr","channel": "testchannel"},"timestamp": 1589013949,"id": "UeXqiTIjhdabrlvIk4qP"}}
-     */
     public void trans(String sourceFile, String targetFile, List<String> keyList){
         File file = new File(sourceFile);
 
@@ -52,7 +47,7 @@ public class SourceFileToJsonFile {
             while ((str = bufferedReader.readLine()) != null) {
                 if (StringUtils.isNotBlank(str)) {
                     count++;
-                    String line = lineToJson.lineToString(str, keyList);
+                    String line = ILineToJson.lineToString(str);
                     bufferedWriter.newLine();
                     bufferedWriter.write(line);
                 }

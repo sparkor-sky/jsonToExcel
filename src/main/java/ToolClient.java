@@ -1,6 +1,6 @@
-import com.wuxi.sqlLine.DefaultEsLineToJson;
-import com.wuxi.tools.JsonFileToExcel;
-import com.wuxi.tools.SourceFileToJsonFile;
+import com.wuxi.line.impl.EsILineToJson;
+import com.wuxi.trans.JsonFileToExcel;
+import com.wuxi.trans.SourceFileToJsonFile;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -25,7 +25,7 @@ public class ToolClient {
         // sql文件转 json文件
         List<String> keyList = genKeyList();
 
-        SourceFileToJsonFile fileTranser = new SourceFileToJsonFile(new DefaultEsLineToJson());
+        SourceFileToJsonFile fileTranser = new SourceFileToJsonFile(new EsILineToJson());
 
         fileTranser.trans(sqlSource, targetJsonFilePath, keyList);
 
