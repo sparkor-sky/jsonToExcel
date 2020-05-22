@@ -2,10 +2,11 @@ package com.wuxi.sqlLine;
 
 import com.google.gson.JsonObject;
 import org.apache.commons.collections4.CollectionUtils;
+import org.apache.commons.lang3.StringUtils;
 
 import java.util.List;
 
-public class DefaultSqlLineToJson extends SqlLineToJson {
+public class DefaultSqlLineToJson extends LineToJson {
     private String prefix;
     private String suffix;
 
@@ -21,8 +22,12 @@ public class DefaultSqlLineToJson extends SqlLineToJson {
      */
     @Override
     public String lineToString(String line, List<String> keyList) {
-        line = line.replace(prefix, "");
-        line = line.replace(suffix, "");
+        if(StringUtils.isNotBlank(prefix)){
+            line = line.replace(prefix, "");
+        }
+        if(StringUtils.isNotBlank(suffix)){
+            line = line.replace(suffix, "");
+        }
 
         String[] parts = line.split(",");
 

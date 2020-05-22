@@ -1,4 +1,6 @@
+import com.wuxi.sqlLine.DefaultEsLineToJson;
 import com.wuxi.tools.JsonFileToExcel;
+import com.wuxi.tools.SourceFileToJsonFile;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
@@ -12,24 +14,26 @@ public class ToolClient {
     /**
      * The file path of source sql file that export from mysql
      * */
-    private static String sqlSource = "/Users/liwuxi/Desktop/nielsen.txt";
+    private static String sqlSource = "/Users/liwuxi/Desktop/2.log";
 
     public static void main(String[] args){
-//        String targetJsonFilePath = genTargetPath();
+        String targetJsonFilePath = genTargetPath();
 
-//        // 删除旧数据
-//        clean(targetJsonFilePath);
-//
-//        // sql文件转 json文件
-//        List<String> keyList = genKeyList();
-//
-//        SqlFileToJsonFile.trans(sqlSource, targetJsonFilePath, new DefaultSqlLineToJson("(", "),"), keyList);
+        // 删除旧数据
+        clean(targetJsonFilePath);
+
+        // sql文件转 json文件
+        List<String> keyList = genKeyList();
+
+        SourceFileToJsonFile fileTranser = new SourceFileToJsonFile(new DefaultEsLineToJson());
+
+        fileTranser.trans(sqlSource, targetJsonFilePath, keyList);
 
         // json 转excel
-        String timeField = "timeStamp";
+        String timeField = "timestamp";
         Map<String, String> keyTitleMap = genTitleMap();
 
-        JsonFileToExcel.trans("/Users/liwuxi/Desktop/landing.txt", timeField, keyTitleMap, 100000);
+        JsonFileToExcel.trans("/Users/liwuxi/Desktop/target/123/json.txt", timeField, keyTitleMap, 100000);
     }
 
     /**

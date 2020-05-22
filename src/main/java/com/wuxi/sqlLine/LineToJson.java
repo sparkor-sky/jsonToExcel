@@ -2,7 +2,7 @@ package com.wuxi.sqlLine;
 
 import java.util.List;
 
-public abstract class SqlLineToJson {
+public abstract class LineToJson {
 
     /**
      * @param line

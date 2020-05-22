@@ -90,6 +90,9 @@ public final class JsonFileToExcel {
         if(CollectionUtils.isEmpty(jsonList)){
             return;
         }
+
+
+
         final JsonParser parser = new JsonParser();
         List<JsonObject> jsonObjectList = jsonList.stream().map(e -> parser.parse(e).getAsJsonObject()).collect(Collectors.toList());
         writeExcel(jsonObjectList, targetPath, timeField, rowTitle);

@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28beb4c0-9954-4d5b-b696-b6f896098a80" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultEsLineToJson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/wuxi/tools/EsFileToJsonFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/wuxi/sqlLine/DefaultEsLineToJsonTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/demoFile/sqlDemoFile.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/demoFile/sqlDemoFile.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ToolClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ToolClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultSqlLineToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultSqlLineToJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/SqlLineToJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/LineToJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/wuxi/tools/SqlFileToJsonFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/wuxi/tools/SqlFileToJsonFile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,27 +38,27 @@
     <session id="1444149195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.2" value="2" />
-          <entry key="project.open.time.3" value="1" />
+          <entry key="project.closed" value="8" />
+          <entry key="project.open.time.1" value="2" />
+          <entry key="project.open.time.2" value="3" />
+          <entry key="project.open.time.3" value="3" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="5" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="31" />
-          <entry key="java" value="5086" />
-          <entry key="md" value="926" />
+          <entry key="java" value="5468" />
+          <entry key="md" value="927" />
           <entry key="txt" value="5" />
           <entry key="xml" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5086" />
-          <entry key="Markdown" value="926" />
+          <entry key="JAVA" value="5468" />
+          <entry key="Markdown" value="927" />
           <entry key="PLAIN_TEXT" value="36" />
           <entry key="XML" value="56" />
         </counts>
@@ -61,7 +67,7 @@
         <counts>
           <entry key="class" value="1" />
           <entry key="gitignore" value="1" />
-          <entry key="java" value="19" />
+          <entry key="java" value="27" />
           <entry key="md" value="2" />
           <entry key="txt" value="7" />
           <entry key="xml" value="1" />
@@ -70,7 +76,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
-          <entry key="JAVA" value="19" />
+          <entry key="JAVA" value="27" />
           <entry key="Markdown" value="2" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="XML" value="1" />
@@ -80,11 +86,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ToolClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="702">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+            <state relative-caret-position="391">
+              <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -93,39 +99,9 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="179">
-                <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="49" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/sqlDemoFile.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/jsonFileDemo.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
+            <state relative-caret-position="297">
               <caret line="11" selection-start-line="11" selection-end-line="42" selection-end-column="19" />
             </state>
           </provider>
@@ -134,10 +110,83 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5454">
-              <caret line="219" column="11" selection-start-line="219" selection-start-column="11" selection-end-line="219" selection-end-column="11" />
+            <state relative-caret-position="344">
+              <caret line="93" selection-start-line="93" selection-end-line="93" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/SqlFileToJsonFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96">
+              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/EsFileToJsonFile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="291">
+              <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/LineToJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="108">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultSqlLineToJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="24" selection-start-line="24" selection-end-line="29" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultEsLineToJson.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="35" column="37" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="351">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/wuxi/sqlLine/DefaultEsLineToJsonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="11" column="416" lean-forward="true" selection-start-line="11" selection-start-column="416" selection-end-line="11" selection-end-column="416" />
+              <folding>
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#784#785#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,6 +198,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -160,6 +210,7 @@
       <find>File.separator</find>
       <find>@project</find>
       <find>keys</find>
+      <find>prefix</find>
     </findStrings>
     <replaceStrings>
       <replace>keyList.add</replace>
@@ -177,15 +228,18 @@
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuxi/tools/Transverter.java" />
         <option value="$PROJECT_DIR$/src/main/resources/demoFile/sqlFileDemo.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/SqlLineToJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultSqlLineToJson.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/tools/SqlFileToJsonFile.java" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ToolClient.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/demoFile/sqlDemoFile.txt" />
         <option value="$PROJECT_DIR$/src/main/resources/demoFile/jsonFileDemo.txt" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/resources/demoFile/sqlDemoFile.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/SqlLineToJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/tools/EsFileToJsonFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/tools/SqlFileToJsonFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultSqlLineToJson.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultEsLineToJson.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/wuxi/sqlLine/DefaultEsLineToJsonTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ToolClient.java" />
       </list>
     </option>
   </component>
@@ -203,9 +257,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="779" />
+    <option name="x" value="-916" />
+    <option name="y" value="-1057" />
+    <option name="width" value="1920" />
+    <option name="height" value="1057" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,7 +269,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -238,6 +292,39 @@
               <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wuxi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wuxi" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlLine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="wuxi" type="462c0819:PsiDirectoryNode" />
+              <item name="tools" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -250,30 +337,64 @@
             </path>
             <path>
               <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="gson-to-excel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="sqlLine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="gson-to-excel" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1589187017759" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/main/resources/demoFile" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.wuxi.sqlLine" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.wuxi.sqlLine" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wuxi.sqlLine" />
+      <recent name="com.wuxi.tools" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/resources/demoFile" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -292,6 +413,22 @@
     <configuration name="ToolClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ToolClient" />
       <module name="gson-to-excel" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DefaultEsLineToJsonTest.lineToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gson-to-excel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wuxi.sqlLine.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.wuxi.sqlLine" />
+      <option name="MAIN_CLASS_NAME" value="com.wuxi.sqlLine.DefaultEsLineToJsonTest" />
+      <option name="METHOD_NAME" value="lineToString" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -320,10 +457,12 @@
       <item itemvalue="JUnit.MainTest.testTruncationDir" />
       <item itemvalue="Application.ToolClient" />
       <item itemvalue="JUnit.MainTest.jsonParserTest" />
+      <item itemvalue="JUnit.DefaultEsLineToJsonTest.lineToString" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ToolClient" />
+        <item itemvalue="JUnit.DefaultEsLineToJsonTest.lineToString" />
         <item itemvalue="JUnit.MainTest.jsonParserTest" />
         <item itemvalue="JUnit.MainTest.testTruncationDir" />
       </list>
@@ -343,17 +482,15 @@
       <workItem from="1589187437759" duration="276000" />
       <workItem from="1589357193278" duration="5946000" />
       <workItem from="1589596094610" duration="163000" />
-      <workItem from="1589635590633" duration="1435000" />
+      <workItem from="1589635590633" duration="2754000" />
+      <workItem from="1589801072089" duration="110000" />
+      <workItem from="1589956796818" duration="1373000" />
+      <workItem from="1590117439667" duration="645000" />
+      <workItem from="1590120256662" duration="2515000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainTest_testTruncationDir - 2020.05.11 at 13h 01m 18s.xml">
-      <configuration name="MainTest.testTruncationDir" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainTest_testTruncationDir - 2020.05.11 at 13h 02m 51s.xml">
-      <configuration name="MainTest.testTruncationDir" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainTest_testTruncationDir - 2020.05.11 at 13h 02m 57s.xml">
       <configuration name="MainTest.testTruncationDir" configurationId="JUnit" />
     </history-entry>
@@ -369,15 +506,30 @@
     <history-entry file="MainTest_jsonParserTest - 2020.05.11 at 14h 28m 31s.xml">
       <configuration name="MainTest.jsonParserTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="DefaultEsLineToJsonTest_lineToString - 2020.05.22 at 13h 01m 07s.xml">
+      <configuration name="DefaultEsLineToJsonTest.lineToString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultEsLineToJsonTest_lineToString - 2020.05.22 at 13h 01m 24s.xml">
+      <configuration name="DefaultEsLineToJsonTest.lineToString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultEsLineToJsonTest_lineToString - 2020.05.22 at 13h 03m 11s.xml">
+      <configuration name="DefaultEsLineToJsonTest.lineToString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultEsLineToJsonTest_lineToString - 2020.05.22 at 13h 11m 39s.xml">
+      <configuration name="DefaultEsLineToJsonTest.lineToString" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DefaultEsLineToJsonTest_lineToString - 2020.05.22 at 13h 12m 11s.xml">
+      <configuration name="DefaultEsLineToJsonTest.lineToString" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23345000" />
+    <option name="totallyTimeSpent" value="29307000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="798" extended-state="6" />
+    <frame x="-916" y="-1057" width="1920" height="1057" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15544413" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -387,15 +539,15 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Database Console" order="0" visible="true" weight="0.24352331" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32953367" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3568406" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4031088" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3554404" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.29430053" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="8" weight="0.32953367" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3371105" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.33617023" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="12" weight="0.32953367" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32953367" />
@@ -437,21 +589,48 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java</url>
-          <line>98</line>
+          <line>101</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java</url>
-          <line>210</line>
+          <line>213</line>
           <properties />
           <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/com/wuxi/sqlLine/DefaultEsLineToJsonTest.java</url>
+          <line>17</line>
+          <properties />
+          <option name="timeStamp" value="14" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
+      <expression>
+        <expression-string>parser.parse(line)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parser.parse(line).getAsJsonObject().get(&quot;_source&quot;).getAsJsonObject().toString();</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>parser.parse(line).getAsJsonObject()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>StringUtils.isNotBlank(data.get(&quot;qiguaitype&quot;).getAsString())</expression-string>
         <language-id>JAVA</language-id>
@@ -479,11 +658,6 @@
       </expression>
       <expression>
         <expression-string>from.split(File.separator)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Transverter.truncationDir(&quot;/user/wuxi/sdf.txt&quot;)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>CODE_FRAGMENT</evaluation-mode>
       </expression>
@@ -553,27 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultSqlLineToJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/SqlLineToJson.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/SqlFileToJsonFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="16" column="101" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_191.jdk/Contents/Home/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -581,10 +734,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ToolClient.java">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="1323">
+            <caret line="49" selection-start-line="49" selection-end-line="49" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/sqlDemoFile.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="702">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/jsonFileDemo.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="297">
+          <caret line="11" selection-start-line="11" selection-end-line="42" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/LineToJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="351">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultSqlLineToJson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="24" selection-start-line="24" selection-end-line="29" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/EsFileToJsonFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="16" column="78" selection-start-line="16" selection-start-column="78" selection-end-line="16" selection-end-column="78" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -593,42 +798,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/JsonFileToExcel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5454">
-          <caret line="219" column="11" selection-start-line="219" selection-start-column="11" selection-end-line="219" selection-end-column="11" />
+        <state relative-caret-position="344">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/tools/SqlFileToJsonFile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="11" selection-start-line="11" selection-end-line="42" selection-end-column="19" />
+        <state relative-caret-position="-96">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/jsonFileDemo.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/sqlLine/DefaultEsLineToJson.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        <state relative-caret-position="600">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="19" selection-end-line="35" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="179">
-            <caret line="22" selection-start-line="22" selection-end-line="27" selection-end-column="49" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/wuxi/sqlLine/DefaultEsLineToJsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="416" lean-forward="true" selection-start-line="11" selection-start-column="416" selection-end-line="11" selection-end-column="416" />
+          <folding>
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#784#785#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/sqlDemoFile.txt">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ToolClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        <state relative-caret-position="391">
+          <caret line="31" column="50" selection-start-line="31" selection-start-column="50" selection-end-line="31" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
