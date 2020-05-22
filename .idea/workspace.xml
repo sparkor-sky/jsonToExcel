@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="28beb4c0-9954-4d5b-b696-b6f896098a80" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/wuxi/client/Convertor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/demoFile/EsDemoFile.txt" afterDir="false" />
-    </list>
+    <list default="true" id="28beb4c0-9954-4d5b-b696-b6f896098a80" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,7 +28,7 @@
     <session id="1444149195">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="8" />
+          <entry key="project.closed" value="9" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.2" value="3" />
           <entry key="project.open.time.3" value="3" />
@@ -44,7 +41,7 @@
           <entry key="dummy" value="31" />
           <entry key="java" value="5733" />
           <entry key="md" value="927" />
-          <entry key="txt" value="5" />
+          <entry key="txt" value="14" />
           <entry key="xml" value="56" />
         </counts>
       </usages-collector>
@@ -52,7 +49,7 @@
         <counts>
           <entry key="JAVA" value="5733" />
           <entry key="Markdown" value="927" />
-          <entry key="PLAIN_TEXT" value="36" />
+          <entry key="PLAIN_TEXT" value="45" />
           <entry key="XML" value="56" />
         </counts>
       </usages-collector>
@@ -79,14 +76,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ToolClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -100,9 +94,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/EsDemoFile.txt">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -240,6 +238,7 @@
         <option value="$PROJECT_DIR$/src/main/java/ToolClient.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/wuxi/line/EsILineToJsonTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/wuxi/client/Convertor.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/demoFile/EsDemoFile.txt" />
       </list>
     </option>
   </component>
@@ -477,7 +476,7 @@
       <workItem from="1589801072089" duration="110000" />
       <workItem from="1589956796818" duration="1373000" />
       <workItem from="1590117439667" duration="645000" />
-      <workItem from="1590120256662" duration="4940000" />
+      <workItem from="1590120256662" duration="5028000" />
     </task>
     <servers />
   </component>
@@ -514,12 +513,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31732000" />
+    <option name="totallyTimeSpent" value="31820000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-916" y="-1057" width="1920" height="1057" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21908316" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -537,7 +537,7 @@
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="FindBugs-IDEA" order="8" weight="0.32953367" />
       <window_info anchor="bottom" id="Spring" order="9" weight="0.32953367" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3357513" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3357513" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Statistic" order="12" weight="0.32953367" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32953367" />
@@ -826,16 +826,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ToolClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/wuxi/client/Convertor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -844,7 +834,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/demoFile/EsDemoFile.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ToolClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">
