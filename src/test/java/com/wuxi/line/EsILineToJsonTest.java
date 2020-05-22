@@ -14,6 +14,6 @@ public class EsILineToJsonTest {
 
     @Test
     public void lineToString() {
-        System.out.println(ILineToJson.lineToString(esLine2, new ArrayList<>()));
+        System.out.println(ILineToJson.lineToString(esLine2));
     }
 }

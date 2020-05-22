@@ -11,29 +11,24 @@ import java.util.*;
  * to excel, and is a java maven project.You can find demo sql file in resource/demoFile/*
  */
 public class ToolClient {
-    /**
-     * The file path of source sql file that export from mysql
-     * */
-    private static String sqlSource = "/Users/liwuxi/Desktop/2.log";
 
     public static void main(String[] args){
-        String targetJsonFilePath = genTargetPath();
+        String sourcePath = "/Users/liwuxi/Desktop/2.log";
+
+        String targetJsonFilePath = genTargetPath(sourcePath);
 
         // 删除旧数据
         clean(targetJsonFilePath);
 
         // sql文件转 json文件
         List<String> keyList = genKeyList();
-
-        SourceFileToJsonFile fileTranser = new SourceFileToJsonFile(new EsILineToJson());
-
-        fileTranser.trans(sqlSource, targetJsonFilePath, keyList);
+        SourceFileToJsonFile fileTransfer = new SourceFileToJsonFile(new EsILineToJson());
+        fileTransfer.trans(sourcePath, targetJsonFilePath, keyList);
 
         // json 转excel
         String timeField = "timestamp";
         Map<String, String> keyTitleMap = genTitleMap();
-
-        JsonFileToExcel.trans("/Users/liwuxi/Desktop/target/123/json.txt", timeField, keyTitleMap, 100000);
+        JsonFileToExcel.trans(targetJsonFilePath, timeField, keyTitleMap, 100000);
     }
 
     /**
@@ -66,9 +61,8 @@ public class ToolClient {
     /**
      * the target dir path of json file
      * */
-    private static String genTargetPath() {
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:00:00");
-        return truncationDir(sqlSource) + "target" + File.separator + format.format(new Date()) + File.separator + "json.txt";
+    private static String genTargetPath(String sourceFilePath) {
+        return truncationDir(sourceFilePath) + "target" + File.separator + File.separator + "json.txt";
     }
 
     private static String truncationDir(String from) {
