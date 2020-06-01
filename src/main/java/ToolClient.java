@@ -15,20 +15,20 @@ public class ToolClient {
     public static void main(String[] args){
         String sourcePath = "/Users/liwuxi/Desktop/2.log";
 
-        String targetJsonFilePath = genTargetPath(sourcePath);
-
-        // 删除旧数据
-        clean(targetJsonFilePath);
-
-        // sql文件转 json文件
-        List<String> keyList = genKeyList();
-        SourceFileToJsonFile fileTransfer = new SourceFileToJsonFile(new EsILineToJson());
-        fileTransfer.trans(sourcePath, targetJsonFilePath, keyList);
+//        String targetJsonFilePath = genTargetPath(sourcePath);
+//
+//        // 删除旧数据
+//        clean(targetJsonFilePath);
+//
+//        // sql文件转 json文件
+//        List<String> keyList = genKeyList();
+//        SourceFileToJsonFile fileTransfer = new SourceFileToJsonFile(new EsILineToJson());
+//        fileTransfer.trans(sourcePath, targetJsonFilePath, keyList);
 
         // json 转excel
         String timeField = "timestamp";
         Map<String, String> keyTitleMap = genTitleMap();
-        JsonFileToExcel.trans(targetJsonFilePath, timeField, keyTitleMap, 100000);
+        JsonFileToExcel.trans("/Users/liwuxi/Desktop/2.log", timeField, keyTitleMap, 100000);
     }
 
     /**

@@ -118,53 +118,49 @@ public final class JsonFileToExcel {
             for (int i = 0; i < datas.size(); i++) {
                 XSSFRow row = sheet.createRow(i + 1);
                 JsonObject json = datas.get(i);
-                for (int j = 0; j < keyList.size(); j++) {
-                    String key = keyList.get(j);
-                    String value = "";
-                    if (StringUtils.isNotBlank(timeField) && timeField.equalsIgnoreCase(key)) {
-                        JsonElement e = json.get(key);
-                        try{
-                            if(null != e){
-                                long time = e.getAsLong();
-                                if (time < 32525372800L) {
-                                    time = time * 1000;
-                                }
-                                value = format.format(new Date(time));
-                            }
-                        }catch (NumberFormatException ex){
-                            value = e.getAsString();
-                        }
-                    } else {
-                        String[] keyParts = key.split(SEPARATOR);
-                        if(keyParts.length == 1){
+                try{
+                    for (int j = 0; j < keyList.size(); j++) {
+                        String key = keyList.get(j);
+                        String value = "";
+                        if (StringUtils.isNotBlank(timeField) && timeField.equalsIgnoreCase(key)) {
                             JsonElement e = json.get(key);
-                            if(null != e){
-                                if(e.isJsonObject()){
-                                    value = e.getAsJsonObject().toString();
-                                } else if(e.isJsonArray()){
-                                    value = e.getAsJsonArray().toString();
-                                } else {
-                                    value = e.getAsString();
+                            try{
+                                if(null != e){
+                                    long time = e.getAsLong();
+                                    if (time < 32525372800L) {
+                                        time = time * 1000;
+                                    }
+                                    value = format.format(new Date(time));
                                 }
+                            }catch (NumberFormatException ex){
+                                value = e.getAsString();
+                            }
+                        } else {
+                            String[] keyParts = key.split(SEPARATOR);
+                            if(keyParts.length == 1){
+                                JsonElement e = json.get(key);
+                                value = getJsonString(value, e);
+                            } else if(keyParts.length == 2){
+                                JsonElement e = json.get(keyParts[0]);
+                                if(null != e){
+                                    if(!e.isJsonObject()){
+                                        System.out.println("json element can not match key, key: " + key + ", json: " + e.toString());
+                                        throw new IllegalArgumentException();
+                                    }
+                                    JsonElement subEle = e.getAsJsonObject().get(keyParts[1]);
+                                    value = getJsonString(value, subEle);
 
-                            }
-                        } else if(keyParts.length == 2){
-                            JsonElement e = json.get(keyParts[0]);
-                            if(null != e){
-                                if(!e.isJsonObject()){
-                                    System.out.println("json element can not match key, key: " + key + ", json: " + e.toString());
-                                    throw new IllegalArgumentException();
-                                }
-                                JsonElement subEle = e.getAsJsonObject().get(keyParts[1]);
-                                if(null != subEle){
-                                    value = subEle.getAsString();
                                 }
                             }
+
                         }
-
+                        row.createCell(j).setCellValue(value);
                     }
-                    row.createCell(j).setCellValue(value);
+                }catch (Exception e){
+                    System.out.println("error genbook, data: " + json.toString() + ", cause: ");
+                    e.printStackTrace();
                 }
+
             }
 
         } else {
@@ -175,6 +171,20 @@ public final class JsonFileToExcel {
             cell.setCellValue("无数据");
         }
         return result;
+    }
+
+    private static String getJsonString(String value, JsonElement e) {
+        if(null != e){
+            if(e.isJsonObject()){
+                value = e.getAsJsonObject().toString();
+            } else if(e.isJsonArray()){
+                value = e.getAsJsonArray().toString();
+            } else {
+                value = e.getAsString();
+            }
+
+        }
+        return value;
     }
 
     /**
